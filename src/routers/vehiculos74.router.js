@@ -1,0 +1,11 @@
+const express = require("express");
+const router = express.Router();
+const Controller = require("../controllers/vehiculos74.controller");
+router.get("/", Controller.index);
+router.get("/create", Controller.create);
+router.post("/", Controller.store);
+router.get("/:id", Controller.show);
+router.get("/:id/edit", Controller.edit);
+router.put("/:id", Controller.update);
+router.delete("/:id", Controller.destroy);
+module.exports = router;

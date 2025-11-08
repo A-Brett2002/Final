@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de datos de vehiculos</title>
+</head>
+<body>
+    <h1>Base de datos de vehiculos</h1>
+    <p>Consescionario de autos</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (let vehiculo_74 of vehiculos_74) { %>
+            <tr>
+                <td><%= vehiculo_74.MARCA_74 %></td>
+                <td><%= vehiculo_74.MODELO_74 %></td>
+                <td><%= vehiculo_74.PRECIO_74 %></td>
+                <td><%= vehiculo_74.CANTIDAD_74 %></td>
+                <td>
+                    <a href="/vehiculos74/show/<%= vehiculo_74.id %>">Ver</a>
+                    <a href="/vehiculos74/edit/<%= vehiculo_74.id %>">Editar</a>
+                    <a href="/vehiculos74/delete/<%= vehiculo_74.id %>">Eliminar</a>
+                </td>
+            </tr>
+            <% } %>
+        </tbody>
+    </table>
+    <a href="/vehiculos74/create">Crear Vehiculo</a>
+</body>
+</html>

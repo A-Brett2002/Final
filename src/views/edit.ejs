@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Vehiculo</title>
+</head>
+<body>
+    <h1>Editar Vehiculo</h1>
+    <form action="/vehiculos74/update/:id" method="post">
+        <label for="marca">Marca:</label>
+        <input type="text" name="marca" id="marca">
+        <label for="modelo">Modelo:</label>
+        <input type="text" name="modelo" id="modelo">
+        <label for="precio">Precio:</label>
+        <input type="number" name="precio" id="precio">
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" name="cantidad" id="cantidad">
+        <button type="submit">Actualizar</button>
+    </form>
+</body>
+</html>
